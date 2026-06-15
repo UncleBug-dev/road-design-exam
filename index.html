@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обязательная контрольная работа №1 — Изыскания и проектирование автомобильных дорог</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MathJax for rendering LaTeX -->
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>Учреждение образования «Пинский государственный аграрно-технический колледж имени А.Е.Клещева»</h1>
+        <h2>Обязательная контрольная работа №1</h2>
+        <h2><strong>Учебный предмет:</strong> Изыскания и проектирование автомобильных дорог и транспортных объектов</h2>
+        <div style="margin-top: 15px;"><span class="badge" style="background-color: #f39c12; color: #1e3c72; font-size: 13px; padding: 5px 15px;">Учебная группа: 241Б</span></div>
+    </div>
+
+    <div class="container">
+        <div class="toc">
+            <h3>Быстрый переход по билетам:</h3>
+            <div class="toc-grid">
+                <a href="#ticket1" class="toc-link">Билет № 1 (Элементы, Верт. кривая)</a>
+                <a href="#ticket2" class="toc-link">Билет № 2 (План трассы, Круг. кривая)</a>
+                <a href="#ticket3" class="toc-link">Билет № 3 (Прод. профиль, Верт. кривая)</a>
+                <a href="#ticket4" class="toc-link">Билет № 4 (Рабочая отметка, Круг. кривая)</a>
+                <a href="#ticket5" class="toc-link">Билет № 5 (Переходные кривые, Верт. кривая)</a>
+                <a href="#ticket6" class="toc-link">Билет № 6 (Методы проектной линии, Круг. кривая)</a>
+                <a href="#ticket7" class="toc-link">Билет № 7 (Вираж и уширение, Верт. кривая)</a>
+                <a href="#ticket8" class="toc-link">Билет № 8 (Дорожная одежда, Круг. кривая)</a>
+            </div>
+        </div>
+
+
+
+        <div class="tickets-wrapper">
+        <!-- ==================== БИЛЕТ 1 ==================== -->
+        <div class="ticket-card" id="ticket1">
+            <div class="ticket-header">
+                <span>Билет № 1</span>
+                <span class="badge">Вариант 1</span>
+            </div>
+            <div class="ticket-body">
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 1.</span> Перечислить элементы автомобильной дороги. Зарисовать поперечный профиль земляного полотна с указанием основных элементов.</div>
+                    <div class="answer-content">
+                        <p><strong>Автомобильная дорога</strong> представляет собой комплекс сложных инженерных сооружений, предназначенных для непрерывного, безопасного и комфортного движения транспортных средств с расчетными скоростями и нагрузками.</p>
+                        <p>К основным конструктивным элементам автомобильной дороги относятся:</p>
+                        <ul>
+                            <li><strong>Земляное полотно:</strong> грунтовое основание (насыпь или выемка), обеспечивающее устойчивость и проектное положение дорожной одежды.</li>
+                            <li><strong>Дорожная одежда:</strong> многослойная прочная конструкция на проезжей части, воспринимающая нагрузки от транспорта.</li>
+                            <li><strong>Проезжая часть:</strong> элемент дороги, непосредственно предназначенный для движения транспортных средств.</li>
+                            <li><strong>Обочины:</strong> боковые полосы, примыкающие к проезжей части, используемые для остановки ТС, размещения ограждений и обеспечения боковой устойчивости земляного полотна.</li>
+                            <li><strong>Краевые укрепительные полосы:</strong> элементы, повышающие прочность края покрытия проезжей части.</li>
+                            <li><strong>Водоотводные сооружения:</strong> боковые канавы (кюветы), лотки, нагорные канавы, обеспечивающие сбор и отвод поверхностных вод.</li>
+                            <li><strong>Искусственные сооружения:</strong> мосты, путепроводы, эстакады, водопропускные трубы, подпорные стенки.</li>
+                            <li><strong>Элементы обустройства и обстановки:</strong> дорожные знаки, разметка, барьерные ограждения, освещение, остановочные пункты.</li>
+                        </ul>
+                        
+                        <div class="diagram-container">
+                                                        <svg viewBox="0 0 800 280" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="800" height="280" fill="#fafafa"/>
+                                
+                                <!-- Естественная поверхность земли (пунктир) -->
+                                <path d="M 30 220 L 90 220 M 180 220 L 250 220 M 550 220 L 770 220" stroke="#7e57c2" stroke-width="2" stroke-dasharray="4"/>
+                                <text x="35" y="235" font-size="11" fill="#7e57c2">Поверхность земли (естественная)</text>
+                                
+                                <!-- Земляное полотно -->
+                                <path d="M 180 220 L 280 140 L 520 140 L 620 220" fill="#e5d8cb" stroke="#8d6e63" stroke-width="3"/>
+                                
+                                <!-- Дорожная одежда слои -->
+                                <rect x="320" y="130" width="160" height="10" fill="#78909c" stroke="#455a64" stroke-width="1"/>
+                                <rect x="310" y="140" width="180" height="12" fill="#b0bec5" stroke="#78909c" stroke-width="1"/>
+                                
+                                <!-- Обочины -->
+                                <path d="M 280 140 L 320 130" stroke="#a1887f" stroke-width="2"/>
+                                <path d="M 480 130 L 520 140" stroke="#a1887f" stroke-width="2"/>
+                                
+                                <!-- Линия оси дороги -->
+                                <line x1="400" y1="50" x2="400" y2="140" stroke="#333" stroke-width="1" stroke-dasharray="4"/>
+                                <circle cx="400" cy="140" r="3" fill="red"/>
+                                <text x="405" y="70" font-size="12" fill="red" font-weight="bold">Ось дороги</text>
+                                
+                                <!-- Проезжая часть -->
+                                <line x1="320" y1="110" x2="480" y2="110" stroke="#00796b" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                                <text x="400" y="102" font-size="12" fill="#00796b" font-weight="bold" text-anchor="middle">Проезжая часть</text>
+                                
+                                <!-- Обочины подписи -->
+                                <line x1="280" y1="120" x2="320" y2="120" stroke="#e67e22" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                                <text x="300" y="112" font-size="10" fill="#e67e22" text-anchor="middle">Обочина</text>
+                                <line x1="480" y1="120" x2="520" y2="120" stroke="#e67e22" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                                <text x="500" y="112" font-size="10" fill="#e67e22" text-anchor="middle">Обочина</text>
+                                
+                                <!-- Откосы насыпи -->
+                                <text x="210" y="170" font-size="11" fill="#5d4037" transform="rotate(-38.6, 210, 170)" text-anchor="middle">Откос насыпи (1:m)</text>
+                                <text x="590" y="170" font-size="11" fill="#5d4037" transform="rotate(38.6, 590, 170)" text-anchor="middle">Откос насыпи</text>
+                                
+                                <!-- Бровка -->
+                                <circle cx="280" cy="140" r="3" fill="#2980b9"/>
+                                <text x="270" y="132" font-size="11" fill="#2980b9" font-weight="bold" text-anchor="end">Бровка ЗП</text>
+                                <circle cx="520" cy="140" r="3" fill="#2980b9"/>
+                                <text x="530" y="132" font-size="11" fill="#2980b9" font-weight="bold" text-anchor="start">Бровка ЗП</text>
+                                
+                                <!-- Подошва откоса -->
+                                <circle cx="180" cy="220" r="3" fill="#27ae60"/>
+                                <text x="180" y="212" font-size="11" fill="#27ae60" text-anchor="end">Подошва откоса</text>
+                                
+                                <!-- Ширина земляного полотна -->
+                                <line x1="280" y1="160" x2="520" y2="160" stroke="#2c3e50" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                                <text x="400" y="175" font-size="12" fill="#2c3e50" font-weight="bold" text-anchor="middle">Ширина земляного полотна (В)</text>
+                                
+                                <!-- Кювет -->
+                                <path d="M 180 220 L 150 240 L 120 240 L 90 220" fill="none" stroke="#2980b9" stroke-width="1.5"/>
+                                <text x="135" y="255" font-size="10" fill="#2980b9" text-anchor="middle">Боковая канава (кювет)</text>
+                                
+                                <defs>
+                                    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                        <path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/>
+                                    </marker>
+                                </defs>
+                            </svg>
+                            <div class="diagram-caption">Рис. 1.1 Поперечный профиль земляного полотна автомобильной дороги в насыпи и его основные элементы.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 2.</span> Две прямые с уклонами i1=-40‰ и i2=-15‰ пересекаются на ПК12+00. Отметка точки пересечения – 125,00 м. Требуется вычислить пикетное положение и отметки начала, конца и вершины вертикальной кривой радиусом 15000 м.</div>
+                    <div class="answer-content">
+                        <div class="highlight-box">
+                            <strong>Анализ исходных данных:</strong><br>
+                            • Входящий уклон: <span class="math-inline">$i₁ = -40‰ = -0.040$</span> (спуск)<br>
+                            • Выходящий уклон: <span class="math-inline">$i₂ = -15‰ = -0.015$</span> (спуск более пологий)<br>
+                            • Алгебраическая разность уклонов: <span class="math-inline">$Δi = i₂ - i₁ = -0.015 - (-0.040) = +0.025 = 25‰$</span>.<br>
+                            • Так как <span class="math-inline">$Δi > 0$</span>, вертикальная кривая является <strong>вогнутой</strong>.<br>
+                            • Радиус вертикальной кривой: <span class="math-inline">$R = 15000$</span> м.<br>
+                            • Пикет вершины угла (ВУВ): <span class="math-inline">$ПК 12+00 = 1200$</span> м.<br>
+                            • Отметка вершины угла: <span class="math-inline">$H_{ВУ} = 125.00$</span> м.
+                        </div>
+
+                        <p><strong>1. Расчет геометрических элементов вертикальной кривой:</strong></p>
+                        <div class="math-block">
+                            • Тангенс кривой (<span class="math-inline">$T$</span>):
+                            <div class="math-equation">$$T = \frac{R \cdot |i_2 - i_1|}{2} = \frac{15000 \cdot 0.025}{2} = 187.50 \text{ м}$$</div>
+                            • Полная длина кривой (<span class="math-inline">$K$</span>):
+                            <div class="math-equation">$$K = R \cdot |i_2 - i_1| = 15000 \cdot 0.025 = 375.00 \text{ м}$$</div>
+                            • Вертикальная стрелка прогиба (кривизна в вершине <span class="math-inline">$f$</span>):
+                            <div class="math-equation">$$f = \frac{T^2}{2R} = \frac{187.50^2}{2 \cdot 15000} = \frac{35156.25}{30000} = 1.17 \text{ м}$$</div>
+                        </div>
+
+                        <p><strong>2. Определение пикетного положения основных точек:</strong></p>
+                        <div class="math-block">
+                            • Начало вертикальной кривой (НКВ):
+                            <div class="math-equation">$$\text{НКВ} = \text{ВУВ} - T = 1200.00 - 187.50 = 1012.50 \text{ м} \rightarrow \mathbf{ПК 10+12.50}$$</div>
+                            • Конец вертикальной кривой (ККВ):
+                            <div class="math-equation">$$\text{ККВ} = \text{НКВ} + K = 1012.50 + 375.00 = 1387.50 \text{ м} \rightarrow \mathbf{ПК 13+87.50}$$</div>
+                            • Вершина вертикальной кривой находится на пикете пересечения тангенсов: <span class="math-inline">$\mathbf{ПК 12+00}$</span>.
+                        </div>
+
+                        <p><strong>3. Расчет проектных отметок точек на вертикальной кривой:</strong></p>
+                        <ul>
+                            <li><strong>Отметка НКВ:</strong> движение идет вспять по уклону <span class="math-inline">$i₁ = -0.040$</span> от ВУ:
+                                <div class="math-equation">$$H_{НКВ} = H_{ВУ} - (i_1 \cdot T) = 125.00 - (-0.040 \cdot 187.50) = 125.00 + 7.50 = \mathbf{132.50 \text{ м}}$$</div>
+                            </li>
+                            <li><strong>Отметка ККВ:</strong> движение идет вперед по уклону <span class="math-inline">$i₂ = -0.015$</span> от ВУ:
+                                <div class="math-equation">$$H_{ККВ} = H_{ВУ} + (i_2 \cdot T) = 125.00 + (-0.015 \cdot 187.50) = 125.00 - 2.81 = \mathbf{122.19 \text{ м}}$$</div>
+                            </li>
+                            <li><strong>Отметка вершины кривой (на ПК12+00):</strong> так как кривая вогнутая, она проходит выше точки пересечения тангенсов на величину стрелки прогиба <span class="math-inline">$f$</span>:
+                                <div class="math-equation">$$H_{верш} = H_{ВУ} + f = 125.00 + 1.17 = \mathbf{126.17 \text{ м}}$$</div>
+                            </li>
+                        </ul>
+
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Точка кривой</th>
+                                    <th>Пикетное положение</th>
+                                    <th>Проектная отметка (м)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Начало кривой (НКВ)</strong></td>
+                                    <td>ПК 10 + 12.50</td>
+                                    <td>132.50</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Вершина кривой (ВУВ)</strong></td>
+                                    <td>ПК 12 + 00.00</td>
+                                    <td>126.17</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Конец кривой (ККВ)</strong></td>
+                                    <td>ПК 13 + 87.50</td>
+                                    <td>122.19</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== БИЛЕТ 2 ==================== -->
+        <div class="ticket-card" id="ticket2">
+            <div class="ticket-header">
+                <span>Билет № 2</span>
+                <span class="badge">Вариант 2</span>
+            </div>
+            <div class="ticket-body">
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 1.</span> Дать определение понятиям план трассы, план дороги, трасса. Указать в чем отличие плана трассы от плана дороги и схематически их изобразить.</div>
+                    <div class="answer-content">
+                        <ul>
+                            <li><strong>Трасса:</strong> Пространственная линия, проходящая по геометрической оси автомобильной дороги на поверхности земли, характеризующаяся положением в плане и продольном профиле.</li>
+                            <li><strong>План трассы:</strong> Графическое изображение проекции оси автомобильной дороги на горизонтальную плоскость. На нем наносятся только геометрия оси (прямые участки, углы поворота, кривые) и пикетажные отметки.</li>
+                            <li><strong>План дороги:</strong> Более детальный чертеж, представляющий собой проекцию всей дорожной конструкции со всеми её элементами (проезжая часть, обочины, откосы, искусственные сооружения, знаки, разметка, съезды) и окружающей ситуацией местности в пределах полосы отвода.</li>
+                        </ul>
+                        <p><strong>Главное отличие:</strong> План трассы содержит исключительно геометрические параметры <em>осевой линии</em> дороги, тогда как план дороги детально отображает <em>всю ширину дорожного полотна</em>, инженерные коммуникации и ситуацию прилегающей местности.</p>
+                        
+                        <div class="diagram-container">
+                            <svg viewBox="0 0 750 200" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="750" height="200" fill="#fafafa"/>
+                                <!-- План трассы левая часть -->
+                                <text x="100" y="25" font-size="14" font-weight="bold" fill="#1e3c72">А) План трассы (Ось)</text>
+                                <path d="M 40 140 L 160 60 L 300 120" fill="none" stroke="#e74c3c" stroke-width="2.5"/>
+                                <line x1="160" y1="60" x2="200" y2="35" stroke="#718096" stroke-width="1" stroke-dasharray="2"/>
+                                <circle cx="160" cy="60" r="4" fill="#e74c3c"/>
+                                <text x="155" y="50" font-size="11" font-weight="bold">ВУ-1</text>
+                                <line x1="80" y1="110" x2="85" y2="117" stroke="#333" stroke-width="2"/>
+                                <text x="65" y="125" font-size="10">ПК 1</text>
+                                
+                                <!-- Разделитель -->
+                                <line x1="375" y1="10" x2="375" y2="190" stroke="#cbd5e0" stroke-width="1"/>
+                                
+                                <!-- План дороги правая часть -->
+                                <text x="450" y="25" font-size="14" font-weight="bold" fill="#1e3c72">Б) План дороги (Элементы)</text>
+                                <!-- Трасса ось -->
+                                <path d="M 410 140 L 530 60 L 670 120" fill="none" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="3"/>
+                                <!-- Проезжая часть -->
+                                <path d="M 400 130 L 522 48 L 662 108" fill="none" stroke="#4a5568" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+                                <path d="M 420 150 L 538 72 L 678 132" fill="none" stroke="#4a5568" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+                                <!-- Обочины -->
+                                <path d="M 395 125 L 518 42 L 658 102" fill="none" stroke="#a0aec0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+                                <path d="M 425 155 L 542 78 L 682 138" fill="none" stroke="#a0aec0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+                                <!-- Зелень/Ситуация вокруг -->
+                                <circle cx="450" cy="70" r="6" fill="#2ecc71"/>
+                                <text x="460" y="73" font-size="9" fill="#718096">дер.</text>
+                                <rect x="600" y="50" width="25" height="15" fill="#f39c12" stroke="#d35400"/>
+                                <text x="600" y="45" font-size="9" fill="#718096">павильон</text>
+                            </svg>
+                            <div class="diagram-caption">Рис. 2.1 Схематическое сравнение плана трассы (осевая геометрия) и плана дороги (комплексная инженерная ситуация).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 2.</span> Дано: радиус поворота R=2000 м; угол поворота α=26°; вершина угла поворота трассы на ПК14+70 м. Рассчитать параметры заданной горизонтальной круговой кривой: тангенс кривой (Т); длину кривой (К); домер (Д). Определить пикетаж основных точек (начала кривой (НК), середины кривой (СК) и конца кривой (КК)).</div>
+                    <div class="answer-content">
+                        <div class="highlight-box">
+                            <strong>Исходные данные:</strong><br>
+                            Радиус <span class="math-inline">$R = 2000 \text{ м}$</span>; Угол поворота <span class="math-inline">$\alpha = 26^\circ$</span>; Положение вершины угла <span class="math-inline">$\text{ВУ} = \text{ПК } 14+70 = 1470 \text{ м}$</span>.
+                        </div>
+
+                        <p><strong>1. Расчет основных элементов закругления:</strong></p>
+                        <div class="math-block">
+                            • Тангенс кривой (<span class="math-inline">$T$</span>):
+                            <div class="math-equation">$$T = R \cdot \tan\left(\frac{\alpha}{2}\right) = 2000 \cdot \tan(13^\circ) = 2000 \cdot 0.230868 = \mathbf{461.74 \text{ м}}$$</div>
+                            
+                            • Длина круговой кривой (<span class="math-inline">$K$</span>):
+                            <div class="math-equation">$$K = \frac{\pi \cdot R \cdot \alpha}{180^\circ} = \frac{3.141593 \cdot 2000 \cdot 26}{180} = \mathbf{907.57 \text{ м}}$$</div>
+                            
+                            • Домер кривой (<span class="math-inline">$Д$</span>):
+                            <div class="math-equation">$$Д = 2T - K = 2 \cdot 461.74 - 907.57 = 923.48 - 907.57 = \mathbf{15.91 \text{ м}}$$</div>
+                        </div>
+
+                        <p><strong>2. Расчет пикетажного положения основных точек:</strong></p>
+                        <div class="math-block">
+                            • Начало кривой (НК):
+                            <div class="math-equation">$$\text{НК} = \text{ВУ} - T = 1470.00 - 461.74 = 1008.26 \text{ м} \rightarrow \mathbf{ПК 10+08.26}$$</div>
+                            
+                            • Конец кривой (КК):
+                            <div class="math-equation">$$\text{КК} = \text{НК} + K = 1008.26 + 907.57 = 1915.83 \text{ м} \rightarrow \mathbf{ПК 19+15.83}$$</div>
+                            
+                            • Контроль через вершину угла:
+                            <div class="math-equation">$$\text{КК} = \text{ВУ} + T - Д = 1470.00 + 461.74 - 15.91 = 1915.83 \text{ м} \text{ (Контроль сошелся!)}$$</div>
+                            
+                            • Середина кривой (СК):
+                            <div class="math-equation">$$\text{СК} = \text{НК} + \frac{K}{2} = 1008.26 + 453.79 = 1462.05 \text{ м} \rightarrow \mathbf{ПК 14+62.05}$$</div>
+                        </div>
+
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Главная точка кривой</th>
+                                    <th>Расчетная формула</th>
+                                    <th>Пикетное значение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Начало кривой (НК)</strong></td>
+                                    <td>ВУ - T</td>
+                                    <td><strong>ПК 10 + 08.26</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Середина кривой (СК)</strong></td>
+                                    <td>НК + K/2</td>
+                                    <td><strong>ПК 14 + 62.05</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Конец кривой (КК)</strong></td>
+                                    <td>НК + K</td>
+                                    <td><strong>ПК 19 + 15.83</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== БИЛЕТ 3 ==================== -->
+        <div class="ticket-card" id="ticket3">
+            <div class="ticket-header">
+                <span>Билет № 3</span>
+                <span class="badge">Вариант 3</span>
+            </div>
+            <div class="ticket-body">
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 1.</span> Дать определение понятию продольный профиль. Изобразить продольный профиль автомобильной дороги в насыпи, выемке и в нулевой отметке.</div>
+                    <div class="answer-content">
+                        <p><strong>Продольный профиль дороги</strong> — это вертикальный разрез дорожного полотна вдоль оси дороги, развернутый на плоскости чертежа. Продольный профиль графически отображает рельеф местности (черная линия земли), проектную линию дороги (красная линия бровки или оси), продольные уклоны, типы грунтов и водоотводные сооружения.</p>
+                        <p>Положение проектной линии определяет три основных типа профиля:</p>
+                        <ul>
+                            <li><strong>В насыпи:</strong> Проектная линия проходит выше естественной линии земли (<span class="math-inline">$H_{проект} > H_{земли}$</span>). Применяется для защиты от грунтовых вод и снежных заносов.</li>
+                            <li><strong>В выемке:</strong> Проектная линия закладывается глубже естественного уровня земли (<span class="math-inline">$H_{проект} < H_{земли}$</span>). Устраивается при преодолении крупных холмов, водоразделов.</li>
+                            <li><strong>В нулевых отметках:</strong> Точка, где проектная линия пересекает линию поверхности земли (<span class="math-inline">$H_{проект} = H_{земли}$</span>). Рабочая отметка равна нулю.</li>
+                        </ul>
+                        
+                        <div class="diagram-container">
+                            <svg viewBox="0 0 750 220" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="750" height="220" fill="#fafafa"/>
+                                <!-- Черная линия земли -->
+                                <path d="M 50 180 Q 200 60 400 160 T 700 80" fill="none" stroke="#2c3e50" stroke-width="2"/>
+                                <text x="55" y="195" font-size="11" fill="#2c3e50">Линия земли (Черная)</text>
+                                
+                                <!-- Красная проектная линия -->
+                                <path d="M 50 120 L 700 120" fill="none" stroke="#e74c3c" stroke-width="3"/>
+                                <text x="600" y="110" font-size="12" fill="#e74c3c" font-weight="bold">Проектная линия (Красная)</text>
+                                
+                                <!-- Зоны -->
+                                <!-- Выемка слева-центр -->
+                                <text x="210" y="80" font-size="12" fill="#2980b9" font-weight="bold">ВЫЕМКА</text>
+                                <line x1="240" y1="95" x2="240" y2="120" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="2"/>
+                                <text x="245" y="110" font-size="10" fill="#2980b9">h < 0</text>
+                                
+                                <!-- Нулевая точка -->
+                                <circle cx="340" cy="120" r="5" fill="#f39c12"/>
+                                <text x="320" y="140" font-size="11" fill="#f39c12" font-weight="bold">Нулевая точка (h=0)</text>
+                                
+                                <!-- Насыпь справа -->
+                                <text x="480" y="170" font-size="12" fill="#27ae60" font-weight="bold">НАСЫПЬ</text>
+                                <line x1="510" y1="120" x2="510" y2="145" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="2"/>
+                                <text x="515" y="135" font-size="10" fill="#27ae60">h > 0</text>
+                            </svg>
+                            <div class="diagram-caption">Рис. 3.1 Разновидности проектных положений оси дороги относительно рельефа местности.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 2.</span> Две прямые с уклонами i1=20‰ и i2=40‰ пересекаются на ПК15+00. Отметка точки пересечения – 80,00 м. Требуется вычислить пикетное положение и отметки начала, конца и вершины вертикальной кривой радиусом 12000 м.</div>
+                    <div class="answer-content">
+                        <div class="highlight-box">
+                            <strong>Анализ исходных данных:</strong><br>
+                            • Входящий уклон: <span class="math-inline">$i₁ = +20‰ = +0.020$</span> (подъем)<br>
+                            • Выходящий уклон: <span class="math-inline">$i₂ = +40‰ = +0.040$</span> (более крутой подъем)<br>
+                            • Алгебраическая разность уклонов: <span class="math-inline">$Δi = i₂ - i₁ = 0.040 - 0.020 = +0.020 = 20‰$</span>.<br>
+                            • Так как разность уклонов положительна (<span class="math-inline">$Δi > 0$</span>), кривая является <strong>вогнутой</strong>.<br>
+                            • Радиус кривой: <span class="math-inline">$R = 12000$</span> м.<br>
+                            • Пикет вершины угла (ВУВ): <span class="math-inline">$ПК 15+00 = 1500$</span> м.<br>
+                            • Отметка вершины угла: <span class="math-inline">$H_{ВУ} = 80.00$</span> м.
+                        </div>
+
+                        <p><strong>1. Элементы кривой:</strong></p>
+                        <div class="math-block">
+                            <div class="math-equation">$$T = \frac{R \cdot \Delta i}{2} = \frac{12000 \cdot 0.020}{2} = \mathbf{120.00 \text{ м}}$$</div>
+                            <div class="math-equation">$$K = R \cdot \Delta i = 12000 \cdot 0.020 = \mathbf{240.00 \text{ м}}$$</div>
+                            <div class="math-equation">$$f = \frac{T^2}{2R} = \frac{120^2}{2 \cdot 12000} = \frac{14400}{24000} = \mathbf{0.60 \text{ м}}$$</div>
+                        </div>
+
+                        <p><strong>2. Пикетажное положение основных точек:</strong></p>
+                        <div class="math-block">
+                            • Начало кривой (НКВ): <span class="math-inline">$\text{НКВ} = 1500.00 - 120.00 = 1380.00 \text{ м} \rightarrow$</span> <strong>ПК 13+80.00</strong><br>
+                            • Конец кривой (ККВ): <span class="math-inline">$\text{ККВ} = 1380.00 + 240.00 = 1620.00 \text{ м} \rightarrow$</span> <strong>ПК 16+20.00</strong>
+                        </div>
+
+                        <p><strong>3. Расчет проектных отметок:</strong></p>
+                        <ul>
+                            <li><strong>Отметка НКВ:</strong> движемся назад по уклону +0.020 от ВУ:
+                                <div class="math-equation">$$H_{НКВ} = 80.00 - (0.020 \cdot 120.00) = 80.00 - 2.40 = \mathbf{77.60 \text{ м}}$$</div>
+                            </li>
+                            <li><strong>Отметка ККВ:</strong> движемся вперед по уклону +0.040 от ВУ:
+                                <div class="math-equation">$$H_{ККВ} = 80.00 + (0.040 \cdot 120.00) = 80.00 + 4.80 = \mathbf{84.80 \text{ м}}$$</div>
+                            </li>
+                            <li><strong>Отметка вершины кривой на оси (на ПК15+00):</strong> вогнутая кривая лежит выше точки пересечения:
+                                <div class="math-equation">$$H_{верш} = H_{ВУ} + f = 80.00 + 0.60 = \mathbf{80.60 \text{ м}}$$</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== БИЛЕТ 4 ==================== -->
+        <div class="ticket-card" id="ticket4">
+            <div class="ticket-header">
+                <span>Билет № 4</span>
+                <span class="badge">Вариант 4</span>
+            </div>
+            <div class="ticket-body">
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 1.</span> Дать определения понятию рабочая отметка. Схематически показать рабочую отметку в насыпи и выемке. Назвать, что необходимо обеспечить при нанесении проектной линии.</div>
+                    <div class="answer-content">
+                        <p><strong>Рабочая отметка (<span class="math-inline">$h_{раб}$</span>)</strong> — это разность между проектной отметкой (высотой бровки или оси готовой дороги) и натурной отметкой (высотой естественной поверхности земли) в данной пикетажной точке.</p>
+                        <div class="math-block">
+                            <div class="math-equation">$$h_{раб} = H_{проект} - H_{земли}$$</div>
+                        </div>
+                        <p>Если <span class="math-inline">$h_{раб} > 0$</span> — имеет место насыпь, если <span class="math-inline">$h_{раб} < 0$</span> — выемка.</p>
+                        
+                        <p><strong>При нанесении проектной линии (красной линии) на профиль проектировщик обязан обеспечить:</strong></p>
+                        <ol>
+                            <li><strong>Соблюдение нормативных параметров:</strong> непревышение максимальных продольных уклонов и обеспечение минимально допустимых радиусов кривых сопряжения.</li>
+                            <li><strong>Контроль снегозаносимости:</strong> бровка насыпи должна возвышаться над расчетным уровнем снежного покрова, чтобы исключить заносы дороги зимой.</li>
+                            <li><strong>Гидрологическую безопасность:</strong> обеспечение минимального возвышения над уровнем грунтовых вод во избежание переувлажнения земляного полотна.</li>
+                            <li><strong>Экономический баланс:</strong> стремление к минимальным объемам земляных масс и равенству объемов выемок и насыпей.</li>
+                        </ol>
+
+                        <div class="diagram-container">
+                            <svg viewBox="0 0 700 160" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="700" height="160" fill="#fafafa"/>
+                                <!-- Земля -->
+                                <path d="M 50 130 L 350 40 L 650 130" fill="none" stroke="#2c3e50" stroke-width="2"/>
+                                <!-- Проект -->
+                                <line x1="50" y1="85" x2="650" y2="85" stroke="#e74c3c" stroke-width="2.5"/>
+                                
+                                <!-- Рабочая отметка в насыпи (слева) -->
+                                <line x1="120" y1="85" x2="120" y2="110" stroke="#27ae60" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                                <text x="130" y="103" font-size="11" fill="#27ae60" font-weight="bold">h_раб (+ насыпь)</text>
+                                
+                                <!-- Рабочая отметка в выемке (в центре) -->
+                                <line x1="350" y1="40" x2="350" y2="85" stroke="#2980b9" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                                <text x="360" y="65" font-size="11" fill="#2980b9" font-weight="bold">h_раб (- выемка)</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 2.</span> Дано: радиус поворота R=2500 м; угол поворота α=24°; вершина угла поворота трассы на ПК13+80 м. Рассчитать параметры заданной горизонтальной круговой кривой: тангенс кривой (Т); длину кривой (К); биссектрису (Б); домер (Д). Определить пикетаж основных точек (начала кривой (НК), середины кривой (СК) и конца кривой (КК)).</div>
+                    <div class="answer-content">
+                        <div class="highlight-box">
+                            <strong>Исходные данные:</strong> <span class="math-inline">$R = 2500 \text{ м}, \alpha = 24^\circ, \text{ВУ} = \text{ПК } 13+80 = 1380 \text{ м}$</span>.
+                        </div>
+                        <p><strong>1. Параметры горизонтальной кривой:</strong></p>
+                        <div class="math-block">
+                            • Тангенс (<span class="math-inline">$T$</span>):
+                            <div class="math-equation">$$T = R \cdot \tan\left(\frac{\alpha}{2}\right) = 2500 \cdot \tan(12^\circ) = 2500 \cdot 0.212557 = \mathbf{531.39 \text{ м}}$$</div>
+                            • Длина кривой (<span class="math-inline">$K$</span>):
+                            <div class="math-equation">$$K = \frac{\pi \cdot R \cdot \alpha}{180^\circ} = \frac{3.141593 \cdot 2500 \cdot 24}{180} = \mathbf{1047.20 \text{ м}}$$</div>
+                            • Биссектриса (<span class="math-inline">$Б$</span>):
+                            <div class="math-equation">$$Б = R \cdot \left(\sec\left(\frac{\alpha}{2}\right) - 1\right) = 2500 \cdot \left(\frac{1}{\cos(12^\circ)} - 1\right) = 2500 \cdot 0.02234 = \mathbf{55.85 \text{ м}}$$</div>
+                            • Домер (<span class="math-inline">$Д$</span>):
+                            <div class="math-equation">$$Д = 2T - K = 2 \cdot 531.39 - 1047.20 = \mathbf{15.58 \text{ м}}$$</div>
+                        </div>
+                        <p><strong>2. Расчет пикетажа главных точек:</strong></p>
+                        <div class="math-block">
+                            • <strong>НК</strong> = ВУ - T = 1380.00 - 531.39 = 848.61 м $\rightarrow$ <span class="math-inline">$\mathbf{ПК 8+48.61}$</span><br>
+                            • <strong>КК</strong> = НК + K = 848.61 + 1047.20 = 1895.81 м $\rightarrow$ <span class="math-inline">$\mathbf{ПК 18+95.81}$</span><br>
+                            • Контроль: КК = ВУ + T - Д = 1380.00 + 531.39 - 15.58 = 1895.81 м (Верно)<br>
+                            • <strong>СК</strong> = НК + K/2 = 848.61 + 523.60 = 1372.21 м $\rightarrow$ <span class="math-inline">$\mathbf{ПК 13+72.21}$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== БИЛЕТ 5 ==================== -->
+        <div class="ticket-card" id="ticket5">
+            <div class="ticket-header">
+                <span>Билет № 5</span>
+                <span class="badge">Вариант 5</span>
+            </div>
+            <div class="ticket-body">
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 1.</span> Начертите схему угла поворота с переходными кривыми. Обозначьте элементы угла поворота.</div>
+                    <div class="answer-content">
+                        <p><strong>Переходные кривые</strong> устраиваются между прямыми участками и круговой кривой для плавного нарастания центробежной силы при въезде автомобиля в поворот. На протяжении переходной кривой осуществляется постепенный отгон виража и уширение проезжей части.</p>
+                        
+                        <div class="diagram-container">
+                            <svg viewBox="0 -70 700 420" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0" y="-70" width="700" height="420" fill="#fafafa"/>
+                                <!-- Направление тангенсов и продолжение первого тангенса -->
+                                <line x1="50" y1="300" x2="350" y2="50" stroke="#718096" stroke-width="1.5"/>
+                                <line x1="350" y1="50" x2="435" y2="-20.8" stroke="#718096" stroke-width="1.5" stroke-dasharray="5"/>
+                                <line x1="350" y1="50" x2="650" y2="300" stroke="#718096" stroke-width="1.5"/>
+                                <!-- Биссектриса -->
+                                <line x1="350" y1="50" x2="350" y2="140" stroke="#4a5568" stroke-width="1" stroke-dasharray="4"/>
+                                
+                                <circle cx="350" cy="50" r="4" fill="#e74c3c"/>
+                                <text x="345" y="35" font-size="13" font-weight="bold" fill="#e74c3c">ВУ (Вершина угла)</text>
+                                
+                                <!-- Трассировка с переходными кривыми -->
+                                <!-- Входная прямая переходит в переходную кривую на НПК, переходит в круговую кривую на КПК -->
+                                <path d="M 50 300 L 150 220 Q 230 160 300 145 Q 350 140 400 145 Q 470 160 550 220 L 650 300" fill="none" stroke="#2c3e50" stroke-width="3"/>
+                                
+                                <!-- Обозначение главных точек -->
+                                <circle cx="150" cy="220" r="3.5" fill="#2980b9"/><text x="110" y="215" font-size="11" fill="#2980b9" font-weight="bold">НПК</text>
+                                <circle cx="300" cy="145" r="3.5" fill="#27ae60"/><text x="280" y="135" font-size="11" fill="#27ae60" font-weight="bold">КПК (НКК)</text>
+                                <circle cx="400" cy="145" r="3.5" fill="#27ae60"/><text x="405" y="135" font-size="11" fill="#27ae60" font-weight="bold">НПКК (ККК)</text>
+                                <circle cx="550" cy="220" r="3.5" fill="#2980b9"/><text x="560" y="215" font-size="11" fill="#2980b9" font-weight="bold">КПК</text>
+                                <circle cx="350" cy="140" r="3.5" fill="#f39c12"/><text x="345" y="160" font-size="11" fill="#f39c12" font-weight="bold">СК</text>
+                                
+                                <!-- Стрелка угла поворота -->
+                                <path d="M 406.1 3.3 A 73 73 0 0 1 406.1 96.7" fill="none" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrow)"/>
+                                <text x="420" y="55" font-size="13" fill="#e74c3c" font-weight="bold">α (Угол поворота)</text>
+                                
+                                <!-- Элементы буквенные обозначения -->
+                                <text x="210" y="110" font-size="12" fill="#4a5568">Т_общ (Общий тангенс)</text>
+                                <text x="355" y="105" font-size="12" fill="#4a5568">Б_общ (Биссектриса)</text>
+                            </svg>
+                            <div class="diagram-caption">Рис. 5.1 Геометрическая схема кривой с переходными кривыми (НПК - начало переходной кривой, КПК - конец переходной кривой).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 2.</span> [Повторяет задачу Билета №1]. Расчет параметров вертикальной кривой.</div>
+                    <div class="answer-content">
+                        <p>Задача полностью идентична Билету №1. Основные итоги расчета:</p>
+                        <ul>
+                            <li><strong>Элементы кривой:</strong> <span class="math-inline">$T = 187.50 \text{ м}, K = 375.00 \text{ м}, f = 1.17 \text{ м}$</span>.</li>
+                            <li><strong>Пикетажное положение:</strong> НКВ = ПК 10+12.50; ККВ = ПК 13+87.50; Вершина = ПК 12+00.</li>
+                            <li><strong>Проектные отметки:</strong> <span class="math-inline">$H_{НКВ} = 132.50 \text{ м}, H_{ККВ} = 122.19 \text{ м}, H_{верш} = 126.17 \text{ м}$</span>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== БИЛЕТ 6 ==================== -->
+        <div class="ticket-card" id="ticket6">
+            <div class="ticket-header">
+                <span>Билет № 6</span>
+                <span class="badge">Вариант 6</span>
+            </div>
+            <div class="ticket-body">
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 1.</span> Дайте определение «продольный профиль», «проектная отметка», «рабочая отметка». Назовите методы проложения проектной линии и условия их применения.</div>
+                    <div class="answer-content">
+                        <p><strong>Термины:</strong></p>
+                        <ul>
+                            <li><strong>Продольный профиль:</strong> Развертка проекции оси трассы на вертикальную плоскость.</li>
+                            <li><strong>Проектная (красная) отметка:</strong> Высотная отметка оси или бровки спроектированного земляного полотна дороги.</li>
+                            <li><strong>Рабочая отметка:</strong> Разность между проектной отметкой и отметкой земли в конкретной точке.</li>
+                        </ul>
+                        <p><strong>Методы нанесения (проложения) проектной линии:</strong></p>
+                        <ol>
+                            <li><strong>Метод обертывания (секущих):</strong> Проектная линия прокладывается параллельно рельефу местности с минимальными рабочими отметками насыпей (0.5 – 1.5 м).
+                                <br><em>Условия применения:</em> Равнинный и слабохолмистый рельеф, нестесненные условия проектирования. Основная задача — поднять дорогу над уровнем снега и обеспечить сток вод.
+                            </li>
+                            <li><strong>Метод коренных срезок (срезной метод):</strong> Проектная линия наносится с глубоким врезанием в холмы и засыпкой логов высокими насыпями, сглаживая неровности ландшафта.
+                                <br><em>Условия применения:</em> Пересеченный, холмистый и горный рельеф, где критически важно уменьшить продольный уклон дороги для обеспечения движения тяжелого транспорта.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 2.</span> [Повторяет задачу Билета №2]. Расчет горизонтальной кривой.</div>
+                    <div class="answer-content">
+                        <p>Решение полностью соответствует Билету №2. Краткие параметры:</p>
+                        <ul>
+                            <li>Параметры: <span class="math-inline">$T = 461.74 \text{ м}, K = 907.57 \text{ м}, Д = 15.91 \text{ м}$</span>.</li>
+                            <li>Координаты: <strong>НК = ПК 10+08.26</strong>; <strong>СК = ПК 14+62.05</strong>; <strong>КК = ПК 19+15.83</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== БИЛЕТ 7 ==================== -->
+        <div class="ticket-card" id="ticket7">
+            <div class="ticket-header">
+                <span>Билет № 7</span>
+                <span class="badge">Вариант 7</span>
+            </div>
+            <div class="ticket-body">
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 1.</span> Что называется виражом? Его элементы и назначение. Чем вызвана необходимость уширения проезжей части на кривых малых радиусов?</div>
+                    <div class="answer-content">
+                        <p><strong>Вираж</strong> — это устройство односкатного поперечного профиля проезжей части автомобильной дороги с непрерывным уклоном во внутреннюю сторону закругления (к центру кривой), устраиваемое на кривых в плане малых радиусов.</p>
+                        <p><strong>Назначение виража:</strong> Снижение воздействия поперечной центробежной силы на автомобиль, предотвращение заноса или опрокидывания ТС, повышение безопасности движения и комфорта пассажиров без существенного падения скорости.</p>
+                        <p><strong>Элементы виража:</strong> Уклон виража (<span class="math-inline">$i_в$</span>), участок отгона виража (переход от двух скатов к одному), внутренняя уширенная обочина.</p>
+                        
+                        <p><strong>Необходимость уширения проезжей части вызвана следующими факторами:</strong></p>
+                        <ol>
+                            <li><strong>Геометрический фактор:</strong> При прохождении кривой задние колеса транспортного средства смещаются ближе к центру поворота, двигаясь по меньшему радиусу, чем передние. Автомобиль (и особенно автопоезд) занимает в плане большую ширину («динамический коридор»), чем на прямой.</li>
+                            <li><strong>Боковой увод шин:</strong> Под воздействием центробежной силы колеса испытывают деформацию бокового увода, что дополнительно расширяет занимаемую машиной полосу движения.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 2.</span> [Повторяет задачу Билета №3]. Расчет вертикальной кривой.</div>
+                    <div class="answer-content">
+                        <p>Задача полностью дублирует Билет №3.</p>
+                        <ul>
+                            <li>Результаты: <span class="math-inline">$T = 120.00 \text{ м}, K = 240.00 \text{ м}, f = 0.60 \text{ м}$</span>.</li>
+                            <li>Пикеты: НКВ = ПК 13+80.00; ККВ = ПК 16+20.00.</li>
+                            <li>Проектные отметки: <span class="math-inline">$H_{НКВ} = 77.60 \text{ м}, H_{ККВ} = 84.80 \text{ м}, H_{верш} = 80.60 \text{ м}$</span>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== БИЛЕТ 8 ==================== -->
+        <div class="ticket-card" id="ticket8">
+            <div class="ticket-header">
+                <span>Билет № 8</span>
+                <span class="badge">Вариант 8</span>
+            </div>
+            <div class="ticket-body">
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 1.</span> Дать определение понятиям дорожная одежда, земляное полотно. Назвать типы дорожных одежд. Изобразить схему конструкции дорожной одежды.</div>
+                    <div class="answer-content">
+                        <ul>
+                            <li><strong>Земляное полотно:</strong> Профилированное дорожное грунтовое сооружение, предназначенное для укладки конструктивных слоев дорожной одежды, распределения нагрузок и обеспечения долговечности всей дороги.</li>
+                            <li><strong>Дорожная одежда:</strong> Прочная, устойчивая многослойная конструкция, укладываемая на проезжую часть земляного полотна для обеспечения комфортного и безопасного проезда машин с требуемой скоростью.</li>
+                        </ul>
+                        <p><strong>Типы дорожных одежд по характеру работы (жесткости):</strong></p>
+                        <ol>
+                            <li><strong>Жесткие:</strong> Дорожные одежды, имеющие слои из монолитного или сборного цементобетона. Обладают высоким модулем упругости, мало зависящим от температуры и влажности.</li>
+                            <li><strong>Нежесткие:</strong> Дорожные одежды со слоями из асфальтобетонов, щебня, гравия, обработанных вяжущими материалами. Их прочность зависит от климатических факторов.</li>
+                        </ol>
+
+                        <div class="diagram-container">
+                            <svg viewBox="0 0 700 240" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" style="display: block; margin: 0 auto;">
+                                <rect width="700" height="240" fill="#fafafa"/>
+                                <!-- Слои -->
+                                <rect x="50" y="30" width="250" height="25" fill="#37474f"/>
+                                <text x="310" y="47" font-size="12" font-weight="bold" fill="#37474f">1. Покрытие (асфальтобетон/цементобетон)</text>
+                                
+                                <rect x="50" y="55" width="250" height="35" fill="#78909c"/>
+                                <text x="310" y="75" font-size="12" fill="#455a64">2. Основание (щебень, гравий, укрепленный грунт)</text>
+                                
+                                <rect x="50" y="90" width="250" height="45" fill="#cfd8dc"/>
+                                <text x="310" y="115" font-size="12" fill="#78909c">3. Дополнительный (дренирующий/песчаный) слой</text>
+                                
+                                <path d="M 50 135 L 300 135 L 300 200 L 50 200 Z" fill="#d7ccc8" stroke="#8d6e63" stroke-width="1"/>
+                                <text x="310" y="165" font-size="12" font-weight="bold" fill="#5d4037">4. Земляное полотно (грунт рабочего слоя)</text>
+                            </svg>
+                            <div class="diagram-caption">Рис. 8.1 Типовая многослойная структура дорожной одежды автомобильной дороги.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-section">
+                    <div class="question-title"><span>Вопрос 2.</span> [Повторяет задачу Билета №4]. Расчет горизонтальной круговой кривой.</div>
+                    <div class="answer-content">
+                        <p>Задача полностью идентична Билету №4. Итоговые показатели:</p>
+                        <ul>
+                            <li>Элементы: <span class="math-inline">$T = 531.39 \text{ м}, K = 1047.20 \text{ м}, Б = 55.85 \text{ м}, Д = 15.58 \text{ м}$</span>.</li>
+                            <li>Пикетаж: <strong>НК = ПК 8+48.61</strong>; <strong>СК = ПК 13+72.21</strong>; <strong>КК = ПК 18+95.81</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+<button id="backToTop" class="back-to-top" title="Наверх">↑</button>
+</body>
+</html>

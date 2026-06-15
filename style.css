@@ -1,0 +1,242 @@
+html { scroll-behavior: smooth; }
+*, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: #2c3e50;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+        .header-banner {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 5px solid #f39c12;
+        }
+        .header-banner h1 {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .header-banner h2 {
+            font-size: 16px;
+            margin: 5px 0;
+            font-weight: 400;
+            color: #e0e6ed;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        .toc {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #2a5298;
+        }
+        .toc h3 {
+            margin-top: 0;
+            color: #1e3c72;
+            font-size: 16px;
+        }
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .toc-link {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .toc-link:hover {
+            background-color: #edf2f7;
+            text-decoration: underline;
+        }
+        .ticket-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+        .ticket-header {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-bottom: 2px solid #cbd5e0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e3c72;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ticket-body {
+            padding: 25px 30px;
+        }
+        .question-section {
+            margin-bottom: 35px;
+        }
+        .question-section:last-child {
+            margin-bottom: 0;
+        }
+        .question-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .question-title span {
+            color: #f39c12;
+            margin-right: 5px;
+        }
+        .answer-content {
+            font-size: 14px;
+            text-align: justify;
+            color: #334155;
+        }
+        .answer-content p {
+            margin: 0 0 12px 0;
+        }
+        .answer-content ul, .answer-content ol {
+            margin: 0 0 15px 0;
+            padding-left: 20px;
+        }
+        .answer-content li {
+            margin-bottom: 6px;
+        }
+        .math-block {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin: 15px 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .math-equation {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #1a202c;
+        }
+        .math-inline {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            color: #1e3c72;
+        }
+        .diagram-container {
+            text-align: center;
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px dashed #cbd5e0;
+            border-radius: 6px;
+        }
+        .diagram-caption {
+            font-size: 12px;
+            color: #718096;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        table.data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        table.data-table th {
+            background-color: #2a5298;
+            color: white;
+            font-weight: 600;
+            padding: 10px;
+            border: 1px solid #cbd5e0;
+            text-align: left;
+        }
+        table.data-table td {
+            padding: 10px;
+            border: 1px solid #cbd5e0;
+        }
+        table.data-table tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .highlight-box {
+            background-color: #fffaf0;
+            border-left: 4px solid #f39c12;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+            font-size: 13.5px;
+        }
+        .badge {
+            background-color: #2a5298;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+/* Micro-animations */
+.ticket-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ticket-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.toc-link {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.toc-link:hover {
+    transform: translateX(5px);
+}
+
+/* Back to Top button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.back-to-top:hover {
+    background-color: #1e3c72;
+    transform: translateY(-3px);
+}
+
+
